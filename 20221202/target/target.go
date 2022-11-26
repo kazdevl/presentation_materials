@@ -1,6 +1,10 @@
 package target
 
-import "github.com/kazdevl/presentation_materials/20221202/target/repository"
+import (
+	"fmt"
+
+	"github.com/kazdevl/presentation_materials/20221202/target/repository"
+)
 
 type BlogService struct {
 	userModelRepository repository.IFUserModelRepository
@@ -17,4 +21,6 @@ func NewBlogService(
 	}
 }
 
-// TODO
+func (s *BlogService) Sample() {
+	fmt.Print("Hello World")
+}
